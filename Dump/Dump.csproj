@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <PackageId>DumpJson</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>wilyoctopus</Authors>
+    <Copyright>Copyright (c) 2025 wilyoctopus</Copyright>
+    <Product>DumpJson - write your objects to console/debug output via JSON instantly</Product>
+    <Description>A lightweight debugging utility that makes it easy to dump any object to console or debug output with a simple .Dump() extension method. Perfect for quick debugging and inspecting object state during development. Uses System.Text.Json for clean, formatted output.</Description>
+    <PackageTags>dump;dumpjson;debug;debugging;console;output;extension;utility;helper;serialize;json;inspect;development;tools;pretty;prettyprint</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/wilyoctopus/DumpJson</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wilyoctopus/DumpJson</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="9.0.9" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" Condition="Exists('..\README.md')" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" Condition="Exists('..\LICENSE')" />
+    <None Include=".\icon.png" Pack="true" PackagePath="\" Condition="Exists('.\icon.png')" />
+    <None Include=".\THIRD-PARTY-NOTICES.txt" Pack="true" PackagePath="\" Condition="Exists('.\THIRD-PARTY-NOTICES.txt')" />
+  </ItemGroup>
+
+</Project>
