@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     
     <PackageId>DumpJson</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>wilyoctopus</Authors>
     <Copyright>Copyright (c) 2025 wilyoctopus</Copyright>
     <Product>DumpJson - write your objects to console/debug output via JSON instantly</Product>
